@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "F1"; src: url("fonts/Inter-VariableFont_slnt,wght.ttf");}
+@font-face { 
+    font-family: "FB"; src: url("fonts/static/Inter-Bold.ttf");}
+@font-face { 
+    font-family: "FR"; src: url("fonts/static/Inter-Regular.ttf");}
+@font-face {
+    font-family: "FSB"; src: url("fonts/static/Inter-SemiBold.ttf");
+}
+:root {
+    --bg-1: hsl(0, 0%, 8%);
+    --bg-2: hsl(0, 0%, 12%);
+    --bg-3: hsl(0, 0%, 20%);
+    --gr: hsl(75, 94%, 57%);
+    --wh: hsl(0, 0%, 100%);
+
+
+}
+body {
+    background-color: var(--bg-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;}
+.pbox {
+    width: 20%;
+    height: auto;
+    padding: 2rem;
+    background-color: var(--bg-2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ppfoto {
+    width: 10dvh;
+    border-radius: 50%;
+}
+.tprofile {
+    color: var(--wh);
+    font-family: "FSB";
+    font-size: 1.60rem;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+}
+.dtprofile {
+    color: var(--gr);
+    font-family: "FSB";
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+}
+.descriptionprofile {
+    color: var(--wh);
+    font-family: "FR";
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+    text-align: center;
+    width: 80%;
+}
+.sectionbuttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+.boxoptions {
+   width: 87%;
+    height: 20%;
+    background-color: var(--bg-3);
+    border: none;
+    border-radius: 10px;
+    display: flex;;
+    align-items: center;
+    justify-content: center;}
+.boxoptions:hover {
+    background-color: var(--gr);
+    cursor: pointer;    
+}
+.boxoptions:hover .boxoptiondesc {
+    color: var(--bg-2);
+}
+.boxoptiondesc {
+    color: var(--wh);
+    font-family: "FSB";
+    font-size: 0.9rem;
+    text-align: center;
+    width: 80%;
+}
+@media (max-width: 485px) {
+    .pbox {
+        width: 75%;
+    padding: 1.5rem;
+    }
+}
+
